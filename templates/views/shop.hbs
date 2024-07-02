@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <header class="shop-header">
+        <div class="shop-header-content">
+            <h1>Explore Handmade Goods</h1>
+            <p>Welcome to our marketplace!</p>
+            <a href="/" class="shop-btn shop-btn-primary">Back to Home</a>
+        </div>
+    </header>
+
+    <main class="shop-main">
+        <div class="shop-products">
+            {{#each products}}
+            <div class="shop-product">
+                <img src="{{this.image}}" alt="{{this.title}}" class="shop-product-img">
+                <div class="shop-product-details">
+                    <h2 class="shop-product-title">{{this.title}}</h2>
+                    <p class="shop-product-description">{{this.description}}</p>
+                    <p class="shop-product-price">$ {{this.price}}</p>
+                    <a href="#" class="shop-btn shop-btn-secondary">View Details</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </main>
+
+    <footer class="shop-footer">
+        <p>&copy; 2024 Handmade Goods Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>

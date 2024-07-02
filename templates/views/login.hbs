@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{> navbar}}
+    
+         <form action="/login" method="POST">
+        <div class="login">
+        <h1>SignInForm</h1>
+       
+        <input type="email" placeholder="Enter Email" name="email">
+        <input type="password" placeholder="Enter Password" name="password">
+        <input type="submit" class="btn" value="Login">
+    </div>
+   </form>
+</body>
+</html>

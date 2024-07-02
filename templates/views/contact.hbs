@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     {{>navbar}}
+    <!-- Navbar -->
+  
+
+    <!-- Hero Section -->
+    <header class="hero hero-contact">
+        <div class="hero-contact-overlay"></div>
+        <div class="container">
+            <div class="hero-contact-content">
+                <h1 class="hero-contact-title">Contact Us</h1>
+                <p class="hero-contact-description">We'd love to hear from you! Get in touch with us using the form below.</p>
+                <a href="/" class="btn btn-contact">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container container-contact">
+        <section class="section section-contact">
+            <h2 class="section-contact-title">Get in Touch</h2>
+            <div class="contact-content">
+                <form action="/contact" method="POST" class="contact-form">
+                    <div class="form-group form-group-contact">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group form-group-contact">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group form-group-contact">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-contact">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> contact@handmadegoods.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> 123 Handmade Lane, Craftsville, TX 78910</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    {{>footer}}
+
+</body>
+</html>

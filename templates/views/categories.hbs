@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Categories</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   {{>navbar}}
+   {{>search}}
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="/images/jewelry.jpg" alt="Jewelry">
+                    <h3>Jewelry</h3>
+                    <a href="/category/jewelry" class="btn btn-secondary">Browse Jewelry</a>
+                </div>
+                <div class="category-card">
+                    <img src="/images/arts-crafts.jpeg" alt="Art & Crafts">
+                    <h3>Art & Crafts</h3>
+                    <a href="/category/art-crafts" class="btn btn-secondary">Browse Art & Crafts</a>
+                </div>
+                <div class="category-card">
+                    <img src="/images/home-decor.jpeg" alt="Home Decor">
+                    <h3>Home Decor</h3>
+                    <a href="/category/home-decor" class="btn btn-secondary">Browse Home Decor</a>
+                </div>
+                 <div class="category-card">
+                    <img src="/images/clay-Murtis.jpeg" alt="Home Decor">
+                    <h3>clay-Murtis</h3>
+                    <a href="/category/clay" class="btn btn-secondary">Browse Home Decor</a>
+                </div>
+                 <div class="category-card">
+                    <img src="/images/clay-cups.jpeg" alt="Home Decor">
+                    <h3>Artisan Ceramics</h3>
+                    <a href="/category/ceramics" class="btn btn-secondary">Browse Home Decor</a>
+                </div>
+                 <div class="category-card">
+                    <img src="/images/paintings.jpeg" alt="Home Decor">
+                    <h3>Paintings</h3>
+                    <a href="/category/painting" class="btn btn-secondary">Browse Home Decor</a>
+                </div>
+                <!-- Add more category cards as needed -->
+            </div>
+        </section>
+    </main>
+
+   {{>footer}}
+</body>
+</html>
